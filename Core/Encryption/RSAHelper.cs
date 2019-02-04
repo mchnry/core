@@ -50,14 +50,14 @@
 
         }
 
-        public virtual byte[] GetPrivateKey(RSACryptoServiceProvider csp)
+        public virtual byte[] GetPrivateKey(RSA csp)
         {
 
             byte[] toReturn = null;
 
             if (csp == null) throw new ArgumentNullException("csp", "CSP must be provided");
 
-            if (csp.PublicOnly) throw new ArgumentException("CSP does not contain a private key", "csp");
+            //if (csp.PublicOnly) throw new ArgumentException("CSP does not contain a private key", "csp");
             var parameters = csp.ExportParameters(true);
             using (var stream = new MemoryStream())
             {

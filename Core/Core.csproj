@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>Mchnry.Core</AssemblyName>
     <RootNamespace>Mchnry.Core</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="JWT\" />
+    <PackageReference Include="newtonsoft.json" Version="12.0.1" />
   </ItemGroup>
 
 </Project>

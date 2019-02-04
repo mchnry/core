@@ -5,7 +5,7 @@
     public interface IRSAKeyProvider
     {
 
-        RSACryptoServiceProvider GetKey();
+        RSA GetKey();
 
     }
 }

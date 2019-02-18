@@ -5,6 +5,7 @@
     <AssemblyName>Mchnry.Core</AssemblyName>
     <RootNamespace>Mchnry.Core</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1-alpha</Version>
   </PropertyGroup>
 
   <ItemGroup>

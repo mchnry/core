@@ -6,6 +6,7 @@
     <RootNamespace>Mchnry.Core</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1-alpha2</Version>
+    <Configurations>Debug;Release;RC</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

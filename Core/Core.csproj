@@ -5,7 +5,7 @@
     <AssemblyName>Mchnry.Core</AssemblyName>
     <RootNamespace>Mchnry.Core</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Configurations>Debug;Release;RC</Configurations>
     <PackageDest>$(userprofile)\.nuget\packages</PackageDest>
   </PropertyGroup>

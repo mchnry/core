@@ -1,25 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.2;net471;net462</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net48;net472;net462</TargetFrameworks>
     <AssemblyName>Mchnry.Core</AssemblyName>
     <RootNamespace>Mchnry.Core</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.1.2</Version>
     <Configurations>Debug;Release;RC</Configurations>
-    <PackageDest>$(userprofile)\.nuget\packages</PackageDest>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="newtonsoft.json" Version="12.0.1" />
   </ItemGroup>
   
-  <Target Name="PubNugetDev" AfterTargets="Pack">
-    <MakeDir Directories="$(PackageDir)" ContinueOnError="true" />
-    <Exec WorkingDirectory="$(OutputPath)" Command="NuGet.exe delete $(PackageId) $(PackageVersion) -Source &quot;$(PackageDest)&quot; -NonInteractive" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " ContinueOnError="WarnAndContinue" />
-    <Exec WorkingDirectory="$(OutputPath)" Command="NuGet.exe push &quot;$(PackageId).$(PackageVersion).nupkg&quot; -Source &quot;$(PackageDest)&quot; -NonInteractive" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
-  </Target>
- 
 
 
 </Project>
